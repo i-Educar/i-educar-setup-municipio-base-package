@@ -4,6 +4,16 @@ Pacote **template** de parametrização municipal do i-Educar: um único perfil 
 
 Diferente do [`buriti/i-educar-setup-package`](../i-educar-setup-package), este pacote **não inclui** seeders de cidades reais (Saubara, Amélia Rodrigues, etc.). Serve como ponto de partida para novos municípios.
 
+## Compatibilidade
+
+| Produto | Versão |
+| --- | --- |
+| **i-Educar** | **2.12.x** (min. 2.12.0) |
+| **i-Diário** | Portabilis i-Diário (espelho Laguna) via API/SSO do core |
+| Pacote | `1.0.1` |
+
+Declarado em `composer.json` → `extra.ieducar` e `extra.idiario`.
+
 ## Comando principal
 
 ```bash
@@ -26,6 +36,3 @@ Com `APP_MULTI_TENANT=true`, a cidade e a UF do `.env` precisam ser as da conex�
 - `buriti/i-educar-setup-package` ^1.7 (serviços compartilhados, auditoria, pipeline municipal)
 - Seeders do app hospedeiro: `SeederMaster`, `ConfiguracaoEscolarSeeder`, `PerfisUsuariosMunicipioSeeder`, `GerarTurmasSeeder`, etc.
 
-## Compatibilidade
-
-i-Educar **2.11** e **2.12** · PHP **8.3+**
